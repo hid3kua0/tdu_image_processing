@@ -295,9 +295,9 @@
 によりラベリングをすればよい。   
 ラベリングされた画像を図23に示す。   
    
-![ex8_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex8_2.png)   
-   
-図23　ラベリングされた画像
+![ex8_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex8_2.png)   
+   
+図23　ラベリングされた画像   
    
    
 課題9   
