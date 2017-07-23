@@ -245,7 +245,16 @@
 画素のダイナミックレンジを０から２５５にせよ。      
 
 
-
+    imhist(ORG); % 濃度ヒストグラムを生成、表示 
+ 
+    ORG = double(ORG); 
+    mn = min(ORG(:)); % 濃度値の最小値を算出 
+    mx = max(ORG(:)); % 濃度値の最大値を算出 
+    ORG = (ORG-mn)/(mx-mn)*255; 
+    imagesc(ORG); colormap(gray); colorbar; % 画像の表示 
+ 
+    ORG = uint8(ORG); % この行について考察せよ 
+    imhist(ORG); % 濃度ヒストグラムを生成、表示 
 
 
 
