@@ -243,44 +243,89 @@
    
 課題7   
 画素のダイナミックレンジを０から２５５にせよ。      
-
-
-    imhist(ORG); % 濃度ヒストグラムを生成、表示 
+   
+ダイナミックレンジを0から255にするには、
+   
+    imhist(ORG); % 濃度ヒストグラムを生成、表示  
  
-    ORG = double(ORG); 
-    mn = min(ORG(:)); % 濃度値の最小値を算出 
-    mx = max(ORG(:)); % 濃度値の最大値を算出 
-    ORG = (ORG-mn)/(mx-mn)*255; 
-    imagesc(ORG); colormap(gray); colorbar; % 画像の表示 
- 
-    ORG = uint8(ORG); % この行について考察せよ 
-    imhist(ORG); % 濃度ヒストグラムを生成、表示 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    ORG = double(ORG);  
+    mn = min(ORG(:)); % 濃度値の最小値を算出  
+    mx = max(ORG(:)); % 濃度値の最大値を算出  
+    ORG = (ORG-mn)/(mx-mn)*255;  
+    imagesc(ORG); colormap(gray); colorbar; % 画像の表示  
   
+    ORG = uint8(ORG);   
+    imhist(ORG); % 濃度ヒストグラムを生成、表示  
+   
+とすればよい。   
+ダイナミックレンジを変える前の画像とヒストグラム、変えた後の画像とヒストグラムを図19から図22に示す。   
+   
+![ex7_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex7_1.png)   
+   
+図19　ダイナミックレンジ変更前の画像   
+   
+![ex7_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex7_2.png)   
+   
+図20　ダイナミックレンジ変更前のヒストグラム   
+   
+![ex7_3](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex7_3.png)   
+   
+図21　ダイナミックレンジ変更後の画像   
+   
+![ex7_4](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex7_4.png)   
+   
+図22　ダイナミックレンジ変更後のヒストグラム   
+   
+    ORG = uint8(ORG);
+   
+について、これは配列を8ビット符号なし整数へ変換する処理である。ダイナミックレンジが0から255の整数値である必要があるためこの処理を行う。   
+   
+   
+課題8   
+二値化された画像の連結成分にラベルをつけよ。   
+   
+2値化画像の連結成分にラベリングするには、   
+   
+    IMG = ORG > 128; % 閾値128で二値化   
+   
+を行い、   
+   
+    IMG = bwlabeln(IMG);
+   
+によりラベリングをすればよい。   
+ラベリングされた画像を図23に示す。   
+   
+![ex8_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex8_2.png)   
+   
+図23　ラベリングされた画像
+   
+   
+課題9   
+メディアンフィルターを適用し，ノイズ除去を体験せよ。   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
