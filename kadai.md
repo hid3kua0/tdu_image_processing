@@ -10,7 +10,7 @@
   
 によって原画像を読み込み、表示した画像を図1に示す。  
   
-[]  
+![ex1_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex1_1.png)  
   
 図1　原画像  
   
@@ -21,7 +21,7 @@
   
 1/2サンプリングの結果を図2に示す。  
   
-[]  
+![ex1_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex1_2.png)  
    
 図2　1/2サンプリング画像  
   
@@ -33,7 +33,7 @@
   
 とする。1/4サンプリングの結果を図3に示す。  
   
-[]  
+![ex1_3](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex1_3.png)  
   
 図3　1/4サンプリング画像  
   
@@ -44,15 +44,15 @@
   
 の処理を繰り返す。各サンプリングの結果を図4～6に示す。  
   
-[]  
+![ex1_4](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex1_4.png)  
   
 図4　1/8サンプリング画像  
   
-[]  
+![ex1_5](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex1_5.png)  
   
 図5　1/16サンプリング画像  
   
-[]  
+![ex1_6](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex1_6.png)  
   
 図6　1/32サンプリング画像  
   
@@ -68,7 +68,7 @@
 により、原画像を白黒濃淡画像化する。なお、以降の課題においてもこの白黒濃淡画像を使用する。   
 白黒濃淡画像化された原画像を図7に示す。  
   
-[]  
+![ex2_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex2_1.png)  
   
 図7　白黒濃淡画像化された原画像  
   
@@ -80,7 +80,7 @@
 とする。  
 2階調画像を図8に示す。  
   
-[]  
+![ex2_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex2_2.png)  
   
 図8　2階調画像  
   
@@ -95,7 +95,7 @@
 とすればよい。  
 4階調画像を図9に示す。  
   
-[]  
+![ex2_3](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex2_3.png)  
   
 図9　4階調画像  
   
@@ -109,7 +109,7 @@
 とすればよい。  
 8階調画像を図10に示す。  
   
-[]  
+![ex2_4](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex2_4.png)  
   
 図10　8階調画像  
    
@@ -133,19 +133,19 @@
 となる。  
 閾値処理した各画像を図11から図14に示す。  
   
-[]  
+![ex3_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex3_1.png)  
    
 図11　閾値64の画像  
   
-[]  
+![ex3_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex3_2.png)  
    
 図12　閾値96の画像  
   
-[]  
+![ex3_3](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex3_3.png)  
    
 図13　閾値128の画像  
   
-[]  
+![ex3_4](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex3_4.png)  
    
 図14　閾値192の画像  
    
@@ -160,7 +160,7 @@
 により、濃度ヒストグラムを生成する。   
 生成された濃度ヒストグラムを図15に示す。  
    
-[]  
+![ex4_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex4_1.png)  
    
 図15　濃度ヒストグラム  
   
@@ -210,7 +210,7 @@
 により、求めた閾値で画像を生成する。   
 生成された画像を図16に示す。  
    
-[]  
+![ex5_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex5_1.png)  
    
 図16　判別分析法による生成画像  
    
@@ -226,7 +226,7 @@
 により、中間値を閾値とした2値化を行う。  
 128で2値化された画像を図17に示す。  
    
-[]   
+![ex6_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex6_1.png)   
 
 図17　128で2値化された画像   
    
@@ -236,7 +236,7 @@
 により、ディザ法を用いた2値化を行う。   
 ディザ法で2値化された画像を図18に示す。   
    
-[]  
+![ex6_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex6_2.png)  
    
 図18　ディザ法で2値化された画像   
    
