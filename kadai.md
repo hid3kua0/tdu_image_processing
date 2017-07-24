@@ -346,6 +346,20 @@
     IMG = edge(ORG,'canny'); % エッジ抽出（キャニー法）   
    
 により、それぞれプレウィット法、ソベル法、キャニー法によるエッジ抽出を行う。   
+3つのエッジ抽出法により生成された画像を図28から図30に示す。   
+   
+![ex10_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex10_1.png)   
+   
+図28　プレウィット法によるエッジ抽出   
+   
+![ex10_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex10_2.png)   
+   
+図29　ソベル法によるエッジ抽出   
+   
+![ex10_3](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex10_3.png)   
+   
+図30　キャニー法によるエッジ抽出   
+   
 
 
 
