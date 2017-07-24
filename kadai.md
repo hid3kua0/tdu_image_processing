@@ -229,7 +229,7 @@
 128で2値化された画像を図17に示す。  
    
 ![ex6_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex6_1.png)   
-
+   
 図17　128で2値化された画像   
    
     IMG = dither(ORG); % ディザ法による二値化 
@@ -259,7 +259,7 @@
     ORG = uint8(ORG);   
     imhist(ORG); % 濃度ヒストグラムを生成、表示  
    
-とすればよい。   
+とすればよい。   
 ダイナミックレンジを変える前の画像とヒストグラム、変えた後の画像とヒストグラムを図19から図22に示す。   
    
 ![ex7_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex7_1.png)   
