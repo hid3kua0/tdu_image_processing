@@ -299,10 +299,10 @@
    
 図23　ラベリングされた画像   
    
-   
+   
 課題9   
 メディアンフィルターを適用し，ノイズ除去を体験せよ。   
-   
+   
 メディアンフィルタによるノイズ除去を行うには、   
    
     ORG = imnoise(ORG,'salt & pepper',0.02); % ノイズ添付   
@@ -313,30 +313,30 @@
    
     f=[0,-1,0;-1,5,-1;0,-1,0]; % フィルタの設計   
     IMG = filter2(f,IMG,'same'); % フィルタの適用   
-   
-とすればよい。   
+   
+とすればよい。   
 ノイズ添付時、平滑化フィルタによる雑音除去時、メディアンフィルタによる雑音除去時、メディアンフィルタ適応時のそれぞれの画像を図24から図27に示す。   
    
 ![ex9_1](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex9_1.png)   
-   
+   
 図24　ノイズ添付時の画像   
    
 ![ex9_2](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex9_2.png)   
-   
+   
 図25　平滑化フィルタによる雑音除去時の画像   
    
 ![ex9_3](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex9_3.png)   
-   
+   
 図26　メディアンフィルタによる雑音除去時の画像   
    
 ![ex9_4](https://github.com/hid3kua0/tdu_image_processing/blob/master/kadaipic/ex9_4.png)   
-   
+   
 図27　メディアンフィルタ適応時の画像   
    
-   
+   
 課題10   
 エッジ抽出を体験せよ。   
-   
+   
 エッジ抽出における3つの方法を試す。   
    
     IMG = edge(ORG,'prewitt'); % エッジ抽出（プレウィット法）   
@@ -344,7 +344,7 @@
     IMG = edge(ORG,'sobel'); % エッジ抽出（ソベル法）   
    
     IMG = edge(ORG,'canny'); % エッジ抽出（キャニー法）   
-   
+   
 により、それぞれプレウィット法、ソベル法、キャニー法によるエッジ抽出を行う。   
 
 
